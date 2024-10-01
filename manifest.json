@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Website Time Tracker",
+  "version": "1.1",
+  "description": "Tracks time spent on each website in real-time with a modern UI.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
+
